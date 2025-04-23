@@ -19,8 +19,8 @@ public class Employee {
 	@Column(name="first_name")
 	private String firstName;
 	
-	@Column(name="second_name")
-	private String secondName;
+	@Column(name="last_name")
+	private String lastName;
 	
 	@Column(name="email")
 	private String email;
@@ -30,9 +30,9 @@ public class Employee {
 	
 	
 
-	public Employee(String firstName, String secondName, String email) {
+	public Employee(String firstName, String lastName, String email) {
 		this.firstName = firstName;
-		this.secondName = secondName;
+		this.lastName = lastName;
 		this.email = email;
 	}
 
@@ -46,12 +46,12 @@ public class Employee {
 		this.firstName = firstName;
 	}
 
-	public String getSecondName() {
-		return secondName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setSecondName(String secondName) {
-		this.secondName = secondName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getEmail() {
